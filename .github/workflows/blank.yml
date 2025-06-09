@@ -1,4 +1,4 @@
-name: Deploy CloudFormation Stacks
+name: Deploy  Stacks
 
 on:
   workflow_dispatch:
@@ -22,7 +22,7 @@ jobs:
       - name: Deploy CloudFormation Stack
         run: | 
           aws cloudformation deploy \
-          --stack-name inclassstack \
+          --stack-name ritistack \
           --template-file 404AZStack.yaml \
           --capabilities CAPABILITY_NAMED_IAM \
           
